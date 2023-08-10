@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d2d2d2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(biscuit.png);
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: center center;
+
+}
+
+.container {
+    background-color: rgb(239, 234, 231);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 60%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    color: #2f2f2f;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 2%;
+}
+
+p {
+    color: #000000;
+    line-height: 1.6;
+}
+
+span {
+    text-decoration: underline
+}
+
+ol {
+    margin-bottom: 3%;
+    line-height: 1.4;
+}
+
+.haut {
+    display: flex;
+    align-items: center;
+}
+
+.haut img {
+    width: 220px;
+    height: auto;
+    margin-right: -50px;
+    /*margin-left: 15%;*/
+    border-radius: 15px;
+}
+
+.haut h1 {
+    font-size: 45px;
+    z-index: 1;
+    position: relative;
+    background-color: white;
+    /* Pour que le texte soit lisible sur l'image */
+    padding-right: 20px;
+    /* Espacement entre le texte et l'image */
+    background-color: rgb(255, 255, 255, 255);
+    border-radius: 10px;
+    padding: 2.5%;
+    width: 110%;
+    margin-bottom: -10%;
+}
+
+.bas2 {
+    border-radius: 15px;
+    background-color: rgb(248, 246, 244);
+}
+
+.bas {
+    /*border: 1px solid #ccc;*/
+    display: flex;
+    padding: 20px;
+}
+
+.preparation {
+    margin-left: -30%;
+    width: 170%;
+    font-size: 18px;
+}
+
+.ingredients {
+    color: #000000;
+    line-height: 1.6;
+    margin-left: -15%;
+    font-size: 18px;
+}
+
+.instructions {
+    /*background-color: #f2f2f2;*/
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    border: 1.2px solid #000000;
+}
+
+.instru {
+    padding: 2%;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: 5%
+}
+
+.ingredients-column,
+.preparation-column {
+    flex: 0.4;
+    margin-right: 20px;
+    padding: 0 20px;
+}
+
+.preparation-column {
+    border-left: 1px solid #181818;
+}
+
+hr {
+    width: 90%;
+    border: #000000 solid 1px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        background-size: 80%;
+    }
+
+    .container {
+        max-width: 500px;
+        margin-top: 5%;
+    }
+
+    .columns {
+        display: block;
+    }
+
+    .preparation,
+    .ingredients {
+        font-size: 19px;
+    }
+
+    .preparation-column {
+        border-left: none;
+    }
+
+    .ingredients-column,
+    .preparation-column {
+        padding: 0 0px;
+    }
+
+    .preparation {
+        width: 109%;
+        margin-left: -16%;
+    }
+
+    .ingredients {
+        margin-left: -2%;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    /* Largeur de la scrollbar */
+    background-color: rgb(128, 128, 128);
+    /* Couleur de fond de la scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    /* Couleur de la scrollbar */
+    border-radius: 5px;
+    /* Bord arrondi de la scrollbar */
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: rgb(168, 168, 168);
+}
