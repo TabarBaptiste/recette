@@ -50,7 +50,7 @@ span {
     text-decoration: underline
 }
 
-ol {
+li {
     margin-bottom: 3%;
     line-height: 1.4;
 }
@@ -95,8 +95,7 @@ ol {
 }
 
 .preparation {
-    margin-left: -30%;
-    width: 170%;
+    width: 150%;
     font-size: 18px;
 }
 
@@ -117,14 +116,6 @@ ol {
 
 .instru {
     padding: 2%;
-}
-
-.columns {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 20px;
-    margin-left: 5%
 }
 
 .ingredients-column,
@@ -149,18 +140,33 @@ hr {
         background-size: 80%;
     }
 
+    h2 {
+        font-size: 22px;
+    }
+
+    .haut img {
+        margin-right: -110px;
+    }
+
+    .haut h1 {
+        width: 95%;
+        font-size: 40px;
+        margin-bottom: -30%;
+    }
+
+    .bas {
+        margin-top: -8%;
+        display: block;
+    }
+    
     .container {
         max-width: 500px;
         margin-top: 5%;
     }
 
-    .columns {
-        display: block;
-    }
-
     .preparation,
     .ingredients {
-        font-size: 19px;
+        font-size: 17px;
     }
 
     .preparation-column {
@@ -173,12 +179,17 @@ hr {
     }
 
     .preparation {
-        width: 109%;
-        margin-left: -16%;
+        width: 95%;
+        margin-left: -5%;
     }
 
     .ingredients {
-        margin-left: -2%;
+        width: 90%;
+        margin-left: -5%;
+    }
+
+    .instru {
+        margin-top: -10%;
     }
 }
 
