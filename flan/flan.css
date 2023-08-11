@@ -10,7 +10,7 @@ body {
     background-image: url(/img/biscuit.png);
     background-repeat: no-repeat;
     background-size: 35%;
-    background-position: center center;
+    background-position: center 30%;
     flex-direction: column;
 }
 
