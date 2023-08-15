@@ -12,6 +12,18 @@ body {
     background-size: 35%;
     background-position: center center;
     flex-direction: column;
+
+}
+
+.container {
+    background-color: rgb(239, 234, 231);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 60%;
+    margin-top: 2%;
+    margin-bottom: 5%;
     animation: fadeInDown 1s ease-in-out forwards;
 }
 
@@ -26,18 +38,6 @@ body {
         transform: translateY(0);
     }
 }
-
-.container {
-    background-color: rgb(239, 234, 231);
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 60%;
-    margin-top: 2%;
-    margin-bottom: 5%;
-}
-
 h1 {
     color: #000000;
     text-align: center;
@@ -171,7 +171,7 @@ hr {
     color: #fff;
     cursor: pointer;
     display: inline-block;
-    float: right;
+    /*float: right;*/
     font-weight: 700;
     letter-spacing: 0.05em;
     margin-top: -30%;
