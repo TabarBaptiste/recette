@@ -78,3 +78,21 @@ h3:hover {
     }
 
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+    /* Largeur de la scrollbar */
+    background-color: rgb(128, 128, 128);
+    /* Couleur de fond de la scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    /* Couleur de la scrollbar */
+    border-radius: 5px;
+    /* Bord arrondi de la scrollbar */
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: rgb(168, 168, 168);
+}
