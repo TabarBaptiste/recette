@@ -12,6 +12,19 @@ body {
     background-size: 35%;
     background-position: center 30%;
     flex-direction: column;
+    animation: fadeInDown 1s ease-in-out forwards;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .container {
@@ -209,7 +222,7 @@ hr {
 
     .container {
         max-width: 500px;
-        margin-top: 5%;
+        margin-top: 0;
     }
 
     .columns {

@@ -12,6 +12,19 @@ body {
     background-size: 35%;
     background-position: center center;
     flex-direction: column;
+    animation: fadeInDown 1s ease-in-out forwards;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-2.5%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .container {
@@ -66,8 +79,20 @@ li {
     margin-right: -50px;
     /*margin-left: 15%;*/
     border-radius: 15px;
+    animation: image 1s ease-in-out forwards;
 }
 
+@keyframes image {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .haut h1 {
     font-size: 45px;
     z-index: 1;
@@ -267,7 +292,7 @@ hr {
         margin-top: -8%;
         display: block;
     }
-    
+
     .container {
         max-width: 500px;
         margin-top: 5%;
