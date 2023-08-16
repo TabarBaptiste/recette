@@ -1,0 +1,398 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d2d2d2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(biscuit.png);
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: center center;
+    flex-direction: column;
+
+}
+
+.container {
+    background-color: rgb(239, 234, 231);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 60%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    animation: fadeInDown 1s ease-in-out forwards;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-2.5%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    color: #2f2f2f;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 2%;
+}
+
+.qtt {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4%;
+    width: 96%;
+}
+
+p {
+    color: #000000;
+    line-height: 1.6;
+}
+
+span {
+    text-decoration: underline
+}
+
+li {
+    margin-bottom: 3%;
+}
+
+.haut {
+    display: flex;
+    align-items: center;
+}
+
+.haut img {
+    width: 220px;
+    height: auto;
+    margin-right: -50px;
+    /*margin-left: 15%;*/
+    border-radius: 15px;
+    animation: image 1s ease-in-out forwards;
+}
+
+@keyframes image {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.haut h1 {
+    font-size: 45px;
+    z-index: 1;
+    position: relative;
+    background-color: white;
+    /* Pour que le texte soit lisible sur l'image */
+    padding-right: 20px;
+    /* Espacement entre le texte et l'image */
+    background-color: rgb(255, 255, 255, 255);
+    border-radius: 10px;
+    padding: 2.5%;
+    width: 110%;
+    margin-bottom: -10%;
+}
+
+.bas2 {
+    border-radius: 15px;
+    background-color: rgb(248, 246, 244);
+}
+
+.bas {
+    /*border: 1px solid #ccc;*/
+    display: flex;
+    padding: 20px;
+}
+
+.preparation {
+    width: 150%;
+    font-size: 18px;
+}
+
+.ingredients {
+    color: #000000;
+    line-height: 1.6;
+    margin-left: -10%;
+    font-size: 18px;
+}
+
+.instructions {
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    border: 1.2px solid #000000;
+}
+
+.instru {
+    padding: 2%;
+}
+
+.ingredients-column,
+.preparation-column {
+    flex: 1;
+    margin-right: 20px;
+    padding: 0 20px;
+}
+
+.preparation-column {
+    border-left: 1px solid #181818;
+}
+
+.prep {
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.prep-cadre {
+    padding: 2%;
+    margin-top: -3%;
+}
+
+hr {
+    width: 90%;
+    border: #000000 solid 1px;
+}
+
+.sep {
+    width: 60%;
+    border: rgb(0, 0, 0, 0.3) solid 1px;
+}
+
+.back {
+    padding-bottom: 2%
+}
+
+.prep span{
+    color: rgb(101, 101, 101);
+    font-size: 60%;
+}
+
+.fancy {
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    /*float: right;*/
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-top: -30%;
+    outline: none;
+    overflow: visible;
+    padding: 1.25em 2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 13px;
+}
+
+.fancy::before {
+    content: " ";
+    width: 1.5625rem;
+    height: 2px;
+    background: black;
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
+}
+
+.fancy .text {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+.fancy .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.fancy .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy:hover {
+    color: white;
+    background: black;
+}
+
+.fancy:hover::before {
+    width: 0.9375rem;
+    background: white;
+}
+
+.fancy:hover .text {
+    color: white;
+    padding-left: 1.5em;
+}
+
+.fancy:hover .top-key {
+    left: -2px;
+    width: 0px;
+}
+
+.fancy:hover .bottom-key-1,
+.fancy:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
+}
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        background-size: 80%;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .haut img {
+        margin-right: -110px;
+    }
+
+    .haut h1 {
+        width: 95%;
+        font-size: 40px;
+        margin-bottom: -30%;
+    }
+
+    .bas {
+        margin-top: -8%;
+        display: block;
+    }
+
+    .container {
+        max-width: 500px;
+        margin-top: 5%;
+    }
+
+    .preparation,
+    .ingredients {
+        font-size: 17px;
+    }
+
+    .preparation-column {
+        border-left: none;
+    }
+
+    .ingredients-column,
+    .preparation-column {
+        padding: 0 0px;
+    }
+
+    .preparation {
+        width: 95%;
+        margin-left: -5%;
+    }
+
+    .ingredients {
+        width: 90%;
+        margin-left: -5%;
+    }
+
+    .instru {
+        margin-top: -2%;
+    }
+
+    .fancy {
+        margin-top: -5%;
+    }
+
+    li {
+        line-height: 1.4;
+        font-size: 18px;
+    }
+
+    ol li {
+        margin-left: -6%;
+    }
+
+    .prep-cadre {
+        padding: 2%;
+        margin-top: -9%;
+    }
+
+    .qtt {
+        display: block;
+        padding-top: 0.0019%;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    /* Largeur de la scrollbar */
+    background-color: rgb(128, 128, 128);
+    /* Couleur de fond de la scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    /* Couleur de la scrollbar */
+    border-radius: 5px;
+    /* Bord arrondi de la scrollbar */
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: rgb(168, 168, 168);
+}
