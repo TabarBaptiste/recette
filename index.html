@@ -8,9 +8,30 @@
     <link rel="shortcut icon" href="/img/toc.png" type="image/x-icon">
     <title>Recette</title>
 </head>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById("searchInput");
+        const recettes = document.querySelectorAll(".recette");
+
+        searchInput.addEventListener("input", function () {
+            const searchTerm = searchInput.value.toLowerCase();
+
+            recettes.forEach(function (recette) {
+                const titreRecette = recette.querySelector("h3").textContent.toLowerCase();
+                const correspondance = titreRecette.includes(searchTerm);
+
+                recette.style.display = correspondance ? "block" : "none";
+            });
+        });
+    });
+</script>
 
 <body>
     <h1>Recettes fait maison</h1>
+    <div class="input-group">
+        <input required="" type="text" name="text" autocomplete="off" class="input" id="searchInput">
+        <label class="user-label">Chercher recette</label>
+      </div>    
     <div class="corp">
 
         <div class="recette">
@@ -56,8 +77,8 @@
             </a>
         </div>
         <div class="recette">
-            <a href="colombo/">
-                <img src="img/colombo.jpg" alt="Flan">
+            <a href="quiche/">
+                <img src="img/quiche.jpg" alt="Flan">
                 <h3>Quiche</h3>
             </a>
         </div>
