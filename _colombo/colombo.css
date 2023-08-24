@@ -331,14 +331,8 @@ hr {
     }
 
     .ingredients {
-        width: 100%;
+        width: 90%;
         margin-left: -5%;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .encore  {
-        width: 45%;
     }
 
     .instru {
