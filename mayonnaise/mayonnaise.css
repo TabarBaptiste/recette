@@ -38,6 +38,7 @@ body {
         transform: translateY(0);
     }
 }
+
 h1 {
     color: #000000;
     text-align: center;
@@ -100,6 +101,7 @@ li {
         transform: translateY(0);
     }
 }
+
 .haut h1 {
     font-size: 45px;
     z-index: 1;
@@ -290,11 +292,11 @@ hr {
     }
 
     .haut img {
-        margin-right: -110px;
+        margin-right: -115px;
     }
 
     .haut h1 {
-        width: 95%;
+        width: 100%;
         font-size: 40px;
         margin-bottom: -30%;
     }

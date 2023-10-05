@@ -38,6 +38,7 @@ body {
         transform: translateY(0);
     }
 }
+
 h1 {
     color: #000000;
     text-align: center;
@@ -100,6 +101,7 @@ li {
         transform: translateY(0);
     }
 }
+
 .haut h1 {
     font-size: 45px;
     z-index: 1;

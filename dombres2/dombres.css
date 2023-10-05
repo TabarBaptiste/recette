@@ -12,6 +12,7 @@ body {
     background-size: 35%;
     background-position: center center;
     flex-direction: column;
+
 }
 
 .container {
@@ -67,7 +68,7 @@ p {
 }
 
 span {
-    text-decoration: underline dashed rgba(0, 0, 0, 0.7)
+    text-decoration: underline
 }
 
 li {
@@ -365,10 +366,6 @@ hr {
     .prep-cadre {
         padding: 2%;
         margin-top: -9%;
-    }
-
-    ul {
-        margin-left: -10%;
     }
 }
 
